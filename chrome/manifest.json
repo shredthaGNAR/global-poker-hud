@@ -1,0 +1,17 @@
+{
+  "name": "Global HUD",
+  "version": "1.0",
+  "description": "GlobalPoker HUD",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://play.globalpoker.com/gp/10/external-table"
+      ],
+      "js": ["jquery-3.4.1.min.js", "content.js"]
+    }
+  ],
+  "permissions": [
+     "http://localhost:8080"
+  ]
+}
